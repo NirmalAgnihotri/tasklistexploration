@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Pomo - RaccoonBytes</title>
+        <link href= "taskList.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class ="container">
+            <div class="header">
+                <div id = "date">
+
+                </div>
+            </div>
+            <div class="tasks">
+                <ul id="list"></ul>
+            </div>
+            <div class = "add-item">
+                <button id="addbtn"> Add Task</button>
+            </div>
+
+            <!-- Modal Section -->
+            <div id="addTaskModal" class="taskModal">
+
+                <!-- Modal Content -->
+                <div class="modal-content">
+                    <span class="close"> &times;</span>
+                    <p>Should add form here to input task</p>
+                    <form id = "taskForm">
+                        <label for = "taskname"> Task:</label>
+                        <input type="text" id="taskname" placeholder="Name of your task">
+                        <div id="btn-container">
+                            <button id="save-btn" type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <script src="taskList.js"></script>
+    </body>
+</html>
